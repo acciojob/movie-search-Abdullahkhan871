@@ -46,7 +46,7 @@ const App = () => {
           value={userInput}
           onChange={(e) => setUserInput(e.target.value.toLowerCase())}
         />
-        <input type="submit" />
+        <button>Search</button>
       </form>
       <div>
         {searchItem.length > 0 ? (
