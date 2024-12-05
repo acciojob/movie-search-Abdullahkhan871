@@ -54,16 +54,16 @@ const App = () => {
             {searchItem.map((item) => (
               <div key={item.imdbID}>
                 <li>
-                  {item.Title} {item.Year}
-                </li>
-                <div className="img-box">
+                  <p>
+                    {item.Title} ({item.Year})
+                  </p>
                   <img src={item.Poster} alt={item.Title} />
-                </div>
+                </li>
               </div>
             ))}
           </ul>
         ) : (
-          error && <p>Invalid movie name. Try again</p>
+          error && <p className="error">Invalid movie name. Try again</p>
         )}
       </div>
     </div>
