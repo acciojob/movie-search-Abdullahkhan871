@@ -63,7 +63,9 @@ const App = () => {
             ))}
           </ul>
         ) : (
-          error && <p className="error">Invalid movie name. Try again</p>
+          error && (
+            <p className="error">Invalid movie name. Please try again.</p>
+          )
         )}
       </div>
     </div>
